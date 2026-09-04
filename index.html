@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comunio Liga 2026/27</title>
+
+    <meta name="description" content="Aktuelle Übersicht unserer Comunio-Liga">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at top right, rgba(34, 197, 94, 0.20), transparent 35%),
+                radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.18), transparent 35%),
+                #0f172a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 620px;
+        }
+
+        .card {
+            background: rgba(15, 23, 42, 0.82);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            border-radius: 28px;
+            padding: 42px 30px;
+            text-align: center;
+            box-shadow:
+                0 25px 60px rgba(0, 0, 0, 0.45),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+        }
+
+        .trophy {
+            font-size: 64px;
+            margin-bottom: 18px;
+            filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.35));
+        }
+
+        .season {
+            color: #22c55e;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 8vw, 52px);
+            line-height: 1.05;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            color: #cbd5e1;
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 12px 18px;
+            min-width: 130px;
+        }
+
+        .info-label {
+            display: block;
+            color: #94a3b8;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 15px;
+            font-weight: 700;
+            color: #f8fafc;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 360px;
+            padding: 17px 24px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 800;
+            box-shadow: 0 10px 25px rgba(34, 197, 94, 0.25);
+            transition: transform 0.2s ease,
+                        box-shadow 0.2s ease,
+                        filter 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(34, 197, 94, 0.35);
+            filter: brightness(1.05);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .button-icon {
+            font-size: 21px;
+        }
+
+        .hint {
+            margin-top: 22px;
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .footer {
+            margin-top: 24px;
+            text-align: center;
+            color: #475569;
+            font-size: 12px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 35px 20px;
+                border-radius: 23px;
+            }
+
+            .trophy {
+                font-size: 54px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .info {
+                gap: 8px;
+            }
+
+            .info-box {
+                min-width: 115px;
+                padding: 10px 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card">
+
+            <div class="trophy">🏆</div>
+
+            <div class="season">
+                Comunio Saison 2026/27
+            </div>
+
+            <h1>
+                Unsere Liga
+            </h1>
+
+            <p class="subtitle">
+                Die aktuelle Ligaübersicht, Tabelle und Ergebnisse
+                auf einen Blick.
+            </p>
+
+            <div class="info">
+
+                <div class="info-box">
+                    <span class="info-label">Aktueller Stand</span>
+                    <span class="info-value">4. Spieltag</span>
+                </div>
+
+                <div class="info-box">
+                    <span class="info-label">Aktualisiert</span>
+                    <span class="info-value">04.09.2026</span>
+                </div>
+
+            </div>
+
+            <a class="button" href="liga.pdf" target="_blank">
+                <span class="button-icon">📊</span>
+                Aktuelle Ligaübersicht öffnen
+            </a>
+
+            <p class="hint">
+                Die Übersicht wird nach jedem Spieltag aktualisiert.
+            </p>
+
+        </section>
+
+        <div class="footer">
+            Comunio Liga · Saison 2026/27
+        </div>
+
+    </main>
+
+</body>
+</html>
